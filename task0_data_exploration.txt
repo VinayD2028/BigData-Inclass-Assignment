@@ -1,0 +1,65 @@
+Task 0: Data Import and Exploratory Data Analysis
+
+--- 1. Data Import ---
+
+Number of rows: 216
+Number of columns: 12
+
+Schema (df.info() equivalent):
+
+ age: int
+ region: string
+ plan_type: string
+ monthly_fee: double
+ tenure_months: int
+ logins_per_week: double
+ avg_session_minutes: double
+ content_watched_per_week: int
+ num_support_tickets: int
+ satisfaction_score: double
+ used_discount: int
+ churn_flag: int
+
+Data Sample (df.head(5) equivalent):
+
+ age region plan_type  monthly_fee  tenure_months  logins_per_week  avg_session_minutes  content_watched_per_week  num_support_tickets  satisfaction_score  used_discount  churn_flag
+  45   East   Premium        19.99             57             5.55               160.77                        25                    0                 5.0              0           0
+  68   West     Basic         8.99              5             1.75                21.55                         5                    5                 1.0              1           1
+  22  South     Basic         8.99             35             3.61               164.71                        19                    1                 4.0              0           0
+  33   West   Premium        19.99             48             7.99               183.01                        23                    0                 5.0              0           0
+  58  North  Standard        15.49             25             3.95               123.60                        18                    2                 4.0              0           0
+
+--- 2. Exploratory Data Analysis ---
+
+Summary Statistics (df.describe()):
+
+summary               age region plan_type        monthly_fee     tenure_months   logins_per_week avg_session_minutes content_watched_per_week num_support_tickets satisfaction_score       used_discount         churn_flag
+  count               216    216       216                216               216               216                 215                      216                 216                213                 215                215
+   mean 45.56944444444444   None      None 14.395092592592524 27.60648148148148 6.252638888888892  118.35465116279072       14.726851851851851   2.199074074074074  3.276995305164319 0.37209302325581395 0.3302325581395349
+ stddev 15.04457846153462   None      None  4.522195596681169 19.17745174598081 4.474823315120987   68.70445691336857        9.230103493904203  2.4480080319966424 1.4676660926150118 0.48449105264316755 0.4713942749826476
+    min                19   East     Basic               8.99                 1              0.05                5.11                        0                   0                1.0                   0                  0
+    max                75   West  Standard              19.99                60             18.82              238.12                       30                  10                5.0                   1                  1
+
+Class Balance (Target: churn_flag):
+
+ churn_flag  count
+        NaN      1
+        1.0     71
+        0.0    144
+
+Note: 0 = Not Churned, 1 = Churned
+
+Value Counts (Categorical Features):
+
+Column: region
+region  count
+ South     53
+  East     55
+  West     54
+ North     54
+
+Column: plan_type
+plan_type  count
+  Premium     63
+    Basic     80
+ Standard     73

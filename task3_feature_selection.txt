@@ -1,0 +1,7 @@
+Task 3: Feature Selection using Chi-Square
+Top 5 features selected (from indices):
+- Index 5: plan_type_Vec_Basic
+- Index 10: monthly_fee
+- Index 11: tenure_months
+- Index 14: content_watched_per_week
+- Index 15: num_support_tickets

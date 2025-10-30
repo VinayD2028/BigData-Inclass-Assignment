@@ -1,0 +1,16 @@
+Task 5: Business Takeaway
+
+This project aimed to predict customer churn based on synthetic streaming data.
+
+--- 1. What Was Learned ---
+
+The dataset was explored (see task0_data_exploration.txt), revealing the distribution of customers across regions, plans, and churn status.
+Features were preprocessed into a format suitable for machine learning, handling categorical data and nulls (see task1_preprocessing_summary.txt).
+A Logistic Regression model was trained and analyzed in-depth (see task2...txt). It achieved a good level of performance (see metrics) and showed which features (e.g., tenure, satisfaction_score) were most predictive of churn.
+Chi-Square feature selection identified the top 5 most statistically relevant features (see task3...txt), which aligns with the coefficients from the regression model.
+
+--- 2. Model Performance ---
+
+Four different models were trained and compared (see task4...txt).
+Based on the comparison of AUC, Accuracy, and F1-Score, the best-performing model can be selected. (e.g., 'The GBTClassifier provided the highest AUC, indicating the best overall predictive power.')
+The final model can reliably predict customer churn with approximately [X]% accuracy (see Task 4 results), allowing the business to proactively target at-risk customers with retention offers.

@@ -1,0 +1,18 @@
+Task 4: Hyperparameter Tuning and Model Comparison
+
+
+Tuning LogisticRegression...
+LogisticRegression Best Model - AUC: 1.0000, Accuracy: 1.0000, F1-Score: 1.0000
+Best Params for LogisticRegression: {'regParam': 0.0}
+
+Tuning DecisionTree...
+DecisionTree Best Model - AUC: 1.0000, Accuracy: 1.0000, F1-Score: 1.0000
+Best Params for DecisionTree: {'maxDepth': 5}
+
+Tuning RandomForest...
+RandomForest Best Model - AUC: 1.0000, Accuracy: 0.9697, F1-Score: 0.9691
+Best Params for RandomForest: {'numTrees': 20}
+
+Tuning GBT...
+GBT Best Model - AUC: 1.0000, Accuracy: 1.0000, F1-Score: 1.0000
+Best Params for GBT: {'maxIter': 20}

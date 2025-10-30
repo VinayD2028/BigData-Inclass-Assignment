@@ -1,0 +1,45 @@
+Task 2: Logistic Regression - Detailed Evaluation
+
+--- Evaluation Metrics ---
+
+AUC: 1.0000
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-Score: 1.0000
+
+--- Confusion Matrix Data ---
+
+ label  prediction  count
+     0         0.0     24
+     1         1.0      9
+
+'label' = True Class, 'prediction' = Predicted Class
+
+--- Interpretation ---
+
+Accuracy of 100.00% means the model was correct on that percentage of all predictions.
+Weighted Recall of 100.00% means we correctly identified 100% of all 'churn' and 'no-churn' cases.
+AUC of 1.0000 indicates a good ability to distinguish between the two classes.
+
+--- Feature Importance (Coefficients) ---
+
+                 feature  coefficient
+   plan_type_Vec_Premium     8.328843
+      satisfaction_score    -7.036790
+  plan_type_Vec_Standard    -4.768374
+        region_Vec_North     4.713330
+         region_Vec_West    -3.494619
+     plan_type_Vec_Basic    -3.032415
+     num_support_tickets     2.728355
+        region_Vec_South    -2.399197
+         region_Vec_East     1.518086
+           used_discount     1.506097
+content_watched_per_week    -1.034609
+           tenure_months    -0.800166
+             monthly_fee     0.602505
+         logins_per_week    -0.505682
+                     age     0.441137
+     avg_session_minutes    -0.139050
+ plan_type_Vec___unknown     0.000000
+    region_Vec___unknown     0.000000
