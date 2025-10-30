@@ -14,7 +14,49 @@ Build, evaluate, and compare multiple machine learning models using PySpark to p
 ## 💾 Dataset
 
 The dataset used is `churn_streaming_data.csv`, which contains various customer attributes such as age, region, plan type, monthly fee, tenure, and satisfaction scores. The target variable is `churn_flag`, where **1 indicates churn** and **0 indicates no churn**.
+**Query To generate the dataset Synthetically:**
+```
+Act as a data scientist for "StreamNow," a subscription streaming service. We are trying to build a predictive model to identify customers who are at high risk of canceling their subscription in the next month. This is critical for our business because we want to proactively target these at-risk customers with special retention offers, like discounts or content promotions, to reduce overall churn and protect our revenue.
 
+Please generate a synthetic dataset for this task with the following specifications:
+
+Prediction Objective:
+The target variable should be named churn_flag. It must be a binary classification variable where 1 means the customer churned (canceled) and 0 means the customer did not churn.
+
+Feature List (12 features + 1 ID):
+Generate data with the following features, types, and relationships:
+1. customer_id: A unique string identifier for each customer (e.g., "CUST-1001").
+2. age: Customer's age (numeric, between 18 and 75).
+3. region: Geographic region (categorical: "North", "South", "East", "West").
+4. plan_type: Subscription plan (categorical: "Basic", "Standard", "Premium").
+5. monthly_fee: The numeric dollar amount of the monthly subscription ($8.99, $15.49, $19.99). Make this fee correspond logically to the plan_type.
+6. tenure_months: How many months the customer has been subscribed (numeric, 1 to 60).
+7. logins_per_week: Average number of logins per week (numeric, 0 to 20).
+8. avg_session_minutes: Average duration of a viewing session in minutes (numeric, 5 to 240).
+9. content_watched_per_week: Average number of movies/shows watched per week (numeric, 0 to 30).
+10. num_support_tickets: Number of support tickets filed in the last 6 months (numeric, 0 to 10).
+11. satisfaction_score: A customer satisfaction score from a recent survey (ordinal, 1 to 5, where 1 is very dissatisfied and 5 is very satisfied).
+12. used_discount: A flag indicating if the customer is currently using a promotional discount (binary: 1 for yes, 0 for no).
+
+Correlations & Relationships:
+Please ensure the data reflects realistic business scenarios by including these correlations with the churn_flag:
+* Higher churn_flag (more likely to churn) should be correlated with:
+    1. Higher num_support_tickets.
+    2. Lower tenure_months.
+    3. Lower logins_per_week.
+    4. Lower satisfaction_score.
+    5. Lower avg_session_minutes.
+* Lower churn_flag (less likely to churn) should be correlated with:
+    1. Higher tenure_months.
+    2. Higher satisfaction_score.
+    3. Being on a "Premium" plan_type.
+    4. Higher content_watched_per_week.
+
+Data Size and Format:
+Generate 1,000 rows of this synthetic data and provide it in *CSV format*. The first row must contain the headers as specified above.
+
+Data Quality Simulation: To simulate messy, real-world data, please include a small amount of missing values (less than 5%) in the satisfaction_score and avg_session_minutes columns only.
+```
 ---
 
 ## 📂 Output Files
