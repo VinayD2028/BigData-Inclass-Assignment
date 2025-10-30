@@ -1,2 +1,0 @@
-Task 2: Logistic Regression Evaluation
-Logistic Regression Model Accuracy (AUC): 1.00
