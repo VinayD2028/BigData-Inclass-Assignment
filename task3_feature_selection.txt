@@ -1,0 +1,15 @@
+Task 3: Feature Selection using Chi-Square
+Top 5 features selected (from indices):
+- Index 5: plan_type_Vec_Basic
+- Index 10: monthly_fee
+- Index 11: tenure_months
+- Index 14: content_watched_per_week
+- Index 15: num_support_tickets
+
+Sample Output:
+             selectedFeatures  label
+(0.0, 19.99, 57.0, 25.0, 0.0)      0
+   [1.0, 8.99, 5.0, 5.0, 5.0]      1
+ (1.0, 8.99, 35.0, 19.0, 1.0)      0
+(0.0, 19.99, 48.0, 23.0, 0.0)      0
+(0.0, 15.49, 25.0, 18.0, 2.0)      0
