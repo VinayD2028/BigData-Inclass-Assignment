@@ -1,0 +1,44 @@
+# ==============================
+# RPG Maker XP / Pokémon Essentials
+# ==============================
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruby/Bundler (if tooling is added later)
+.bundle/
+vendor/bundle/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# RPG Maker XP generated temporary/project-state files
+*.rxproj.user
+*.rxdata.bak
+
+# Save files (player-local; usually not versioned)
+Save.rxdata
+*.rxdata.save
+
+# Essentials debug caches / generated artifacts (if present)
+Data/*.cache
+Data/*.tmp
+
+# Testing/build artifacts
+coverage/
+dist/
+build/
+
+# Optional: uncomment if you keep large raw source assets elsewhere
+# RawAssets/
